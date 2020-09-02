@@ -21,7 +21,7 @@ def welcomeh():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def funC(text):
+def funC(text="is cool"):
     """ C followed by the value of the text variable"""
     return 'C {}'.format(text.replace('_', ' '))
 
